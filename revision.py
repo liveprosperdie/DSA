@@ -1,11 +1,12 @@
-def count(s):
-    freq={}
-    for ch in s:
-        if ch in freq:
-            freq[ch]=freq[ch]+1
-        else:
-            freq[ch]=1
-    return freq
-
-
-print(count (input()))
+def largest2(a):
+    l=float("-inf")
+    sl=float("-inf")
+    for i in a:
+        if i>l:
+            sl=l
+            l=i
+        elif sl<i<l:
+            sl=i
+    if sl==float("-inf"):
+        sl=None
+    return sl
