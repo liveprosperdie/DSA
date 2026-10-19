@@ -1,5 +1,4 @@
-def rev(s):
-    r=""
-    for i in range(len(s)-1,-1,-1):
-        r=r+s[i]
-    return r
+def even(a):
+    return [x for x in a if x%2==0]
+
+print (even([]))
