@@ -1,4 +1,8 @@
-def even(a):
-    return [x for x in a if x%2==0]
+def palindrome(s):
+    s=s.lower()
+    if s==s[::-1]:
+        return "palindrome"
+    else:
+        return "not palindrome"
 
-print (even([]))
+print(palindrome("madam"))
