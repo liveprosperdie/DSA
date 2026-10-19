@@ -1,12 +1,7 @@
-def largest2(a):
-    l=float("-inf")
-    sl=float("-inf")
-    for i in a:
-        if i>l:
-            sl=l
-            l=i
-        elif sl<i<l:
-            sl=i
-    if sl==float("-inf"):
-        sl=None
-    return sl
+def rev(s):
+    r=""
+    for i in range(len(s)-1,-1,-1):
+        r=r+s[i]
+    return r
+
+print(rev("Shrey"))
