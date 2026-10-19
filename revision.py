@@ -1,8 +1,4 @@
-def palindrome(s):
-    s=s.lower()
-    if s==s[::-1]:
-        return "palindrome"
-    else:
-        return "not palindrome"
+def lengths(a):
+    return {w:len(w) for w in a}
 
-print(palindrome("madam"))
+print(lengths(["Hi","my","name","is","Shrey"]))
