@@ -1,4 +1,4 @@
-def sort(d):
-    s=sorted(d.items(),key=lambda s:s[1], reverse=True)
-    return [x[0][0] for x in s]
-print(sort({"A": 70, "B": 95, "C": 82}))
+def common(a,b):
+    return list(set(a)&set(b))
+
+print(common([1, 2, 2, 3],[2, 3, 4]))
